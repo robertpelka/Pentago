@@ -1,0 +1,38 @@
+GtkWindow {
+	background-image: linear-gradient(Peru);
+}
+
+GtkButton {
+	background-image: linear-gradient(Tan);
+	background-color: Tan;
+}
+
+GtkButton:active {
+	background-image: linear-gradient(#C69F6C);
+	background-color: #C69F6C;
+}
+
+#unpressed {
+	background-image: linear-gradient(Sienna);
+	background-color: Sienna;
+}
+
+#button_black {
+	background-image: linear-gradient(Black);
+	background-color: Black;
+}
+
+#button_white {
+	background-image: linear-gradient(White);
+	background-color: White;
+}
+
+#start {
+	background-image: linear-gradient(#C1FF1D);
+	background-color: #C1FF1D;
+}
+
+#additional {
+	background-image: linear-gradient(Tan);
+	background-color: Tan;
+}
