@@ -1,5 +1,7 @@
 # Pentago
 
+![screenshot](https://user-images.githubusercontent.com/71329150/93709676-76554580-fb40-11ea-8cda-d844f672a779.png)
+
 ###### EN
 Pentago is a two-player abstract strategy game, invented by Tomas Flodén.  
 This program uses the GTK+ 3.18 library.  
