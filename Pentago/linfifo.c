@@ -69,11 +69,10 @@ void closePipes(PipesPtr pipes) {
 }
 
 PipesPtr initPipes(int argc,char *argv[]) {
+    mkfifo("AtoB", 0664);
+    mkfifo("BtoA", 0664);
     if(argc<2 || (argv[1][0]!='A' && argv[1][0]!='B') || argv[1][1]!='\0') {
-        fprintf(stderr, "\nPentago should be called with the first argument: A or B\n\n");
-        mkfifo("AtoB", 0664);
-        mkfifo("BtoA", 0664);
-        fprintf(stderr, "Fifo queues AtoB and BtoA created\n");
+        fprintf(stderr, "\nPentago should be called with one argument: A or B\n\n");
         return NULL;
     }
     PipesPtr pipes=(PipesPtr)malloc(sizeof(struct pipes));
